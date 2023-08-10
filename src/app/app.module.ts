@@ -4,10 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { SearchComponent } from './component/search/search.component';
+import { WeatherDetailsComponent } from './component/weather-details/weather-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent,
+    WeatherDetailsComponent
   ],
   imports: [
     BrowserModule,
