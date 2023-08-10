@@ -1,7 +1,7 @@
-<div style="display: flex; align-items: center; justify-content: center;">
+<form [formGroup]="countryForm" (ngSubmit)="submitForm()" style="display: flex; align-items: center; justify-content: center;">
     <mat-form-field>
         <mat-label>Enter city name</mat-label>
-        <input matInput>
+        <input matInput formControlName="country">
     </mat-form-field>
     <button mat-raised-button color="accent" type="submit" style="margin-bottom: 20px; margin-left: 20px;">Search</button>
-</div>
+</form>
