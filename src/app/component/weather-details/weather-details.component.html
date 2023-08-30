@@ -1,18 +1,18 @@
-<div *ngIf="weatherDetails.description.length" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; border: rgb(255, 166, 0) solid 2px; padding: 50px; border-radius: 20px;">
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; border: rgb(255, 166, 0) solid 2px; padding: 50px; border-radius: 20px;">
     <div style="display: flex; align-items: center;">
-        <h1>Description: </h1><p style="font-family: monospace; margin-left: 5px;">{{weatherDetails.description}}</p>
+        <h1>Description: </h1><p *ngIf="weatherDetails.description.length" style="font-family: monospace; margin-left: 5px;">{{weatherDetails.description}}</p>
     </div>
     <div style="display: flex; align-items: center;">
-        <h1>Temperature: </h1><p style="font-family: monospace; margin-left: 5px;">{{weatherDetails.temp}}</p>
+        <h1>Temperature: </h1><p *ngIf="weatherDetails.description.length" style="font-family: monospace; margin-left: 5px;">{{weatherDetails.temp}}</p>
     </div>
     <div style="display: flex; align-items: center;">
-        <h1>Humidity: </h1><p style="font-family: monospace; margin-left: 5px;">{{weatherDetails.humidity}}</p>
+        <h1>Humidity: </h1><p *ngIf="weatherDetails.description.length" style="font-family: monospace; margin-left: 5px;">{{weatherDetails.humidity}}</p>
     </div>
     <div style="display: flex; align-items: center;">
-        <h1>Wind Speed: </h1><p style="font-family: monospace; margin-left: 5px;">{{weatherDetails.windSpeed}}</p>
+        <h1>Wind Speed: </h1><p *ngIf="weatherDetails.description.length" style="font-family: monospace; margin-left: 5px;">{{weatherDetails.windSpeed}}</p>
     </div>
     <div style="display: flex; align-items: center;">
-        <h1>Wind Degree: </h1><p style="font-family: monospace; margin-left: 5px;">{{weatherDetails.windDeg}}</p>
+        <h1>Wind Degree: </h1><p *ngIf="weatherDetails.description.length" style="font-family: monospace; margin-left: 5px;">{{weatherDetails.windDeg}}</p>
     </div>
     
 </div>
